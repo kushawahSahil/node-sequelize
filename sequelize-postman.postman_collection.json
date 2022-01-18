@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "54b09fbd-ee34-4696-a756-2450fe159f21",
+		"name": "sequelize-postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "rahul",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/kanha/OneDrive/Pictures/5.png"
+						},
+						{
+							"key": "Email",
+							"value": "rahul@gamil.com",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "1234598",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/registration",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"kushawah.sahil2001@gamil.com\",\r\n    \"Password\":\"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/viewProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0MjEyMTQsImV4cCI6MTY0MjQyNDgxNH0.bsGoZxHXV20Ij_2_EOx0E6Nzl_KxmqDufyUm4YVCIXo",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/viewProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"viewProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/updateProfile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0NzQ0MjIsImV4cCI6MTY0MjQ3ODAyMn0.CIWqVWhsCeyR-rAX3HmTgLnm3CJc9IJHCpJrGatFJTc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "sahil Kushawah",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "Image",
+							"type": "file",
+							"src": "/C:/Users/kanha/OneDrive/Pictures/2.png"
+						},
+						{
+							"key": "Email",
+							"value": "kushawah.sahil2001@gamil.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/updateProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/resetPassword",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0NzQ0MjIsImV4cCI6MTY0MjQ3ODAyMn0.CIWqVWhsCeyR-rAX3HmTgLnm3CJc9IJHCpJrGatFJTc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CurrentPassword\":\"1234567\",\r\n    \"Password\":\"123456789\",\r\n    \"ConfirmPassword\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/resetPassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/addAddressBook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0NzQ0MjIsImV4cCI6MTY0MjQ3ODAyMn0.CIWqVWhsCeyR-rAX3HmTgLnm3CJc9IJHCpJrGatFJTc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"Title\":\"metz\",\r\n    \"addressLine1\":\"deta\",\r\n    \"addressLine2\":\"leta\",\r\n    \"Country\":\"india\",\r\n    \"State\":\"gujrat\",\r\n    \"City\":\"ahmedabad\",\r\n    \"PinCode\":382418\r\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/addAddressBook",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"addAddressBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/viewAddressBook",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0NzQ0MjIsImV4cCI6MTY0MjQ3ODAyMn0.CIWqVWhsCeyR-rAX3HmTgLnm3CJc9IJHCpJrGatFJTc",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/viewAddressBook",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"viewAddressBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/updateAddressBook/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0NzQ0MjIsImV4cCI6MTY0MjQ3ODAyMn0.CIWqVWhsCeyR-rAX3HmTgLnm3CJc9IJHCpJrGatFJTc",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Title\": \"corona\",\r\n        \"addressLine1\": \"deltaIncludeOmicron\",\r\n        \"addressLine2\": \"omicron\",\r\n        \"Country\": \"india\",\r\n        \"State\": \"gujrat\",\r\n        \"City\": \"ahmedabad\",\r\n        \"PinCode\": 382418\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/updateAddressBook/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateAddressBook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/deleteAddressBook/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imt1c2hhd2FoLnNhaGlsMjAwMUBnYW1pbC5jb20iLCJpYXQiOjE2NDI0NzQ0MjIsImV4cCI6MTY0MjQ3ODAyMn0.CIWqVWhsCeyR-rAX3HmTgLnm3CJc9IJHCpJrGatFJTc",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/deleteAddressBook/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"deleteAddressBook",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
