@@ -161,7 +161,6 @@ exports.updateProfile = async (req, res, next) => {
 
 exports.resetPassword = async (req, res, next) => {
     try {
-
         const Email = req.user.Email
         const User = await user.findOne({ where: { Email } });
         if (User) {

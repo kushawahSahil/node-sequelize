@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "640edba0-3cd5-42ef-a2b8-f97b08aa08b2",
+		"name": "dating-application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/api/category/searchUser/41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/category/searchUser/41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"searchUser",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/category/searchFavUser/112",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/category/searchFavUser/112",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"searchFavUser",
+						"112"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/category/userProfile/77/77",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/category/userProfile/77/77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"userProfile",
+						"77",
+						"77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4000/api/category/friendRequest/:Id/:friend_userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/category/friendRequest/:Id/:friend_userId",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"friendRequest",
+						":Id",
+						":friend_userId"
+					],
+					"variable": [
+						{
+							"key": "Id",
+							"value": "40"
+						},
+						{
+							"key": "friend_userId",
+							"value": "38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/category/comment",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"41\",\r\n    \"feed_id\":\"41\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/category/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/api/category/onlineUsers/77",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/category/onlineUsers/77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"category",
+						"onlineUsers",
+						"77"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
